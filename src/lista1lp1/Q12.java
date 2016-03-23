@@ -45,7 +45,7 @@ public class Q12 {
         mdSF /= qF;
         mdSM /= qM;
         
-        System.out.println("A maior altura é: " + mxAlt
+        System.out.println("\n\nA maior altura é: " + mxAlt
                            + "\nCom o sexo: " + sexo[maior]);
         System.out.println("A menor altura é: " + mnAlt
                            + "\nCom o sexo: " + sexo[menor]);
