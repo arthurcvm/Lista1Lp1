@@ -11,7 +11,8 @@ public class Q14 {
         int vezes[] = new int [6];
         
         do{
-            System.out.print("Digite as vezes à serem jogadas, ou 0 para encerrar: ");
+            System.out.print("Digite as vezes à serem jogadas, "
+                    + "ou 0 para encerrar: ");
             vez = le.nextInt();
             
             for(int i =0;i < vez; i++){
@@ -36,12 +37,24 @@ public class Q14 {
                 }                
             }
             if(vez != 0){
-                System.out.printf("Lado 1: %.2f",((double)vezes[0]/(double)vez)*100); System.out.println("%");
-                System.out.printf("Lado 2: %.2f",((double)vezes[1]/(double)vez)*100); System.out.println("%");
-                System.out.printf("Lado 3: %.2f",((double)vezes[2]/(double)vez)*100); System.out.println("%");
-                System.out.printf("Lado 4: %.2f",((double)vezes[3]/(double)vez)*100); System.out.println("%");
-                System.out.printf("Lado 5: %.2f",((double)vezes[4]/(double)vez)*100); System.out.println("%");
-                System.out.printf("Lado 6: %.2f",((double)vezes[5]/(double)vez)*100); System.out.println("%");
+                System.out.printf("Lado 1: %.2f",
+                ((double)vezes[0]/(double)vez)*100);
+                System.out.println("%");
+                System.out.printf("Lado 2: %.2f",
+                ((double)vezes[1]/(double)vez)*100);
+                System.out.println("%");
+                System.out.printf("Lado 3: %.2f",
+                ((double)vezes[2]/(double)vez)*100);
+                System.out.println("%");
+                System.out.printf("Lado 4: %.2f",
+                ((double)vezes[3]/(double)vez)*100);
+                System.out.println("%");
+                System.out.printf("Lado 5: %.2f",
+                ((double)vezes[4]/(double)vez)*100);
+                System.out.println("%");
+                System.out.printf("Lado 6: %.2f",
+                ((double)vezes[5]/(double)vez)*100);
+                System.out.println("%");
             }            
             for(int i =0;i < 6; i++){
                 vezes[i] = 0;                

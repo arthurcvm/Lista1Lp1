@@ -8,10 +8,8 @@ public class Q5 {
         Scanner le = new Scanner(System.in);
         double valor;
         byte reajuste;
-
         System.out.print("Valor do produto: ");
-        valor = le.nextDouble();
-        
+        valor = le.nextDouble();        
         do{
             System.out.println("Reajuste de:\n"
                                 + "1 - 15%\n"
@@ -20,7 +18,6 @@ public class Q5 {
                                 + "8 - 40%\n"
                                 + "0 - SAIR");
             reajuste = le.nextByte();
-
             switch(reajuste){
                 case 1: 
                     valor +=(valor*0.15);

@@ -22,7 +22,8 @@ public class Q15 {
                 }
             }
             if(opc > 23 || opc < 0){
-                System.out.println("Informe um valor entre 1 e 23 ou 0 para sair!");
+                System.out.println("Informe um valor entre"
+                        + " 1 e 23 ou 0 para sair!");
             }
         }while(opc != 0);
         
@@ -31,14 +32,13 @@ public class Q15 {
         System.out.println("Jogador\tVotos\t\t%");
         for(int i=0;i<23;i++){
             if(joga[i] != 0){
-                System.out.printf("%d\t%d\t\t%.2f%%\n",i+1,joga[i],(((double)joga[i]/(double)total)*100));
+                System.out.printf("%d\t%d\t\t%.2f%%\n",i+1,joga[i],
+                        (((double)joga[i]/(double)total)*100));
             }            
         }
-        System.out.printf("O melhor jogador foi o número %d, com %d votos, correspondendo a %.2f%% "
-                        + "do total de votos\n",maior,joga[maior-1],(((double)joga[maior-1]/(double)total)*100));
-        
-                       
-        
-    }
-    
+        System.out.printf("O melhor jogador foi o número %d,"
+                + " com %d votos, correspondendo a %.2f%% "
+        + "do total de votos\n"
+        ,maior,joga[maior-1],(((double)joga[maior-1]/(double)total)*100));       
+    }    
 }
